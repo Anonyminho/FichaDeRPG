@@ -1,0 +1,36 @@
+#personagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#personagemButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button{
+    background-color: #92500f;
+    box-shadow: 5px 5px rgb(119, 117, 117);
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    margin-top: 45px;
+    border-radius: 10px;
+    border-color: rgb(144, 111, 56);
+}
+button:hover {
+    background-color:#854c13;
+}
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   align-items: center;
+}
+#showPerso {
+    margin-top: 50px;
+}

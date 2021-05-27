@@ -1,0 +1,77 @@
+#stats {
+    width: 23vw;
+    height: 40vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 2px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    margin-bottom: 17px;
+}
+
+#items {
+    display: grid;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+}
+
+#atributos {
+    margin-bottom: 19px;
+}
+
+#imgClass {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+}
+
+#habilidades {
+    margin-top: 20px;
+}
+
+#concluir {
+    background-color: #92500f;
+    box-shadow: 5px 5px rgb(119, 117, 117);
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    margin-top: 45px;
+    margin-left: 70px;
+    border-radius: 10px;
+    border-color: rgb(144, 111, 56);
+}
+
+#concluir:hover {
+    background-color:#854c13;
+}
+#texto {
+    font-size: 20px;
+}
+
+#forcaSpace, #agilidadeSpace, #inteligenciaSpace, #carismaSpace, #destrezaSpace {
+    margin-bottom: 16px;
+}
+
+.pontos {
+    background-color: #92500f;
+    box-shadow: 2px 2px rgb(119, 117, 117);
+    font-weight: bold;
+}
+
+.pontos:hover {
+    background-color:#854c13;
+}
+
+#sobrando {
+    margin-left: -10px;
+    margin-top: 50px;
+}

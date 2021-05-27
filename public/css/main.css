@@ -1,0 +1,95 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url(/public/img/fundo.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#box {
+    width: 50vw;
+    height: 40vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 2px;
+    margin-bottom: 40px;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.3vw;
+    margin-right: 12px;
+}
+
+#manequim {
+    width: 70px;
+}
+
+#historico {
+    margin-left: 17px;
+    margin-right: 17px;
+    font-size: 18px;
+}
+
+#forms {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-left: 20px;
+}
+
+#infos {
+    display: flex;
+}
+
+#mapa {
+    margin-top: 60px;
+    margin-left: 70px;
+    width: 600px;
+}
+
+#classes {
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+#name, #bornDate {
+    height: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;    
+}
+
+#show {
+    background-color:#92500f;
+    box-shadow: 5px 5px rgb(119, 117, 117);
+    font-size: 27px;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: rgb(144, 111, 56);
+}
+#show:hover {
+    background-color:#854c13;
+}
+#mago, #paladino, #guerreiro {
+    margin-top: 6px;
+    margin-bottom: 25px;
+}
