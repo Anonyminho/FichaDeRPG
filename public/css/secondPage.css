@@ -19,6 +19,7 @@ button{
     width: 150px;
     height: 60px;
     margin-top: 45px;
+    margin-left: 10px;
     border-radius: 10px;
     border-color: rgb(144, 111, 56);
 }
@@ -29,7 +30,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-   align-items: center;
 }
 #showPerso {
     margin-top: 50px;
@@ -44,4 +44,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#excluir {
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
 }

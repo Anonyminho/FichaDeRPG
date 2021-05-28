@@ -1,6 +1,6 @@
 var lista = [];
-if (window.localStorage.getItem('lista')) {
-    lista = window.localStorage.getItem('lista').split('},{');
+if (localStorage.getItem('lista')) {
+    lista = localStorage.getItem('lista').split('},{');
 }
 for (var c = 0; c < lista.length; c++) {
     if (lista[c][0] != '{') {
@@ -33,10 +33,10 @@ function randInt(min, max) {
 
 function back(id) {
     if (id == 0) {
-        window.localStorage.setItem('lista', lista);
+        localStorage.setItem('lista', lista);
         window.location = "personagem.html"
     } else if (id == 1) {
-        window.localStorage.setItem('lista', lista);
+        localStorage.setItem('lista', lista);
         window.location = "index.html"
     }
 }
@@ -124,6 +124,6 @@ function main() {
 
     lista.push(JSON.stringify(personagem));
 
-    window.localStorage.setItem('lista', lista);
+    localStorage.setItem('lista', lista);
 }
 
