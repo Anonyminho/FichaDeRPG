@@ -93,10 +93,6 @@ function main() {
     nasc = parseInt(nasc.split("-")[0]);
     idade = 2021 - nasc;
 
-    if (idade) {
-        idade = randInt(17, 60);
-    }
-
     classes = ['mago', 'guerreiro', 'paladino'];
     for (count = 0; count < classes.length; count++) {
         if (document.getElementById(classes[count]).checked) {

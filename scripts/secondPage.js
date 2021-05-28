@@ -11,7 +11,6 @@ for (var c = 0; c < lista.length; c++) {
     }
 }
 
-
 function back(id) {
     if (id == 0) {
         window.localStorage.setItem('lista', lista);
@@ -43,7 +42,8 @@ function createButtons(id) {
 
 function showCaract(id) {
     document.getElementById("showPerso").innerHTML =
-        `
+        `<section id="caracts">
             Nome: ${JSON.parse(lista[id]).nome}<br>Idade: ${JSON.parse(lista[id]).idade}<br>Classe: ${JSON.parse(lista[id]).classe}
+        </section>
         `
 }

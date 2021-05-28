@@ -34,3 +34,14 @@ p {
 #showPerso {
     margin-top: 50px;
 }
+#caracts {
+    height: 150px;
+    width: 200px;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: black;
+    box-shadow: 4px 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
