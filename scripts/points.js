@@ -13,37 +13,29 @@ function setPoint(id) {
 }
 
 function valoresAdd(str, agi, dex, int, car, vit) {
+    var att = [str, agi, dex, int, car, vit]
     var sum = str + agi + dex + int + car + vit
     var labels = document.querySelectorAll(".pontosAtt");
 
     document.getElementById("pts").innerText = 100 - sum
-
-    labels[0].innerText = str
-    labels[1].innerText = agi
-    labels[2].innerText = dex
-    labels[3].innerText = int
-    labels[4].innerText = car
-    labels[5].innerText = vit
+    for(let i = 0; i < att.length; i++){
+        labels[i].innerText = att[i]
+    }
 }
 
 function changeValue(value, id) {
-    var forca;
-    var agilidade;
-    var vitalidade;
-    var inteligencia;
-    var carisma;
-    var destreza;
-    forca = Number(document.getElementById("forca").textContent)
-    agilidade = Number(document.getElementById("agilidade").textContent)
-    destreza = Number(document.getElementById("destreza").textContent)
-    inteligencia = Number(document.getElementById("inteligencia").textContent)
-    vitalidade = Number(document.getElementById("vitalidade").textContent)
-    carisma = Number(document.getElementById("carisma").textContent)
-
-    var soma = forca + agilidade + destreza + inteligencia + vitalidade + carisma
+    var att = ["forca", "agilidade", "destreza", "inteligencia", "vitalidade", "carisma"];
+    var soma;
     var labels = document.querySelectorAll(".pontosAtt");
-    var valor = parseInt(labels[id].textContent)
+    var valor = parseInt(labels[id].textContent);
+    
+    for(let count = 0; count < att.length; count++){
+        att[count] = Number(document.getElementById(att[count]).textContent)
+    }
+
+    soma = att[0] + att[1] + att[2] + att[3] + att[4] + att[5]
     valor += value
+
     if ((valor >= 0 && valor <= 100 && soma < 100) || (soma == 100 && value < 0)) {
         if (document.getElementById("pts").textContent >= 0) {
             labels[id].innerText = valor
